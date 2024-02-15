@@ -1,0 +1,25 @@
+name: Sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync_file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out the current repo
+      uses: actions/checkout@v4
+
+    - name: Download File
+      run: |
+        wget -N https://github.com/Steamauto/Steamauto/raw/master/README.md
+        git config --global user.email github-actions@github.com
+        
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9.1.4
+      with:
+        author_name: jiajiaxd
+        author_email: i@jiajiaxd.com
+        message: "Auto Sync"
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
