@@ -18,6 +18,7 @@
 > 【ECOSteam】复制整段打开ECOSteam加入「Elsa可达鸭」PN：01J0TGJPQZF7G9FK0P6QJWQGRJ「欢迎加入Elsa可达鸭的团队或点击链接https://share.ecosteam.cn/share/01J0TGJPQZF7G9FK0P6QJWQGRJ「欢迎加入Elsa可达鸭的团队  
 ECOSteam 新CSGO皮肤交易平台  
 交易0手续费 提现1% 加入团队金额前10我还额外赠送免费提现券(20000元)  
+货多的还可以联系群管申请交易补贴!(2%)  
 可租可售 上架就有利息拿 最高可拿15%利息 加入我的团队拿额外2%利息(总金额要求已经达到 只需要人数)  
 > 本软件完美支持ECOSteam, 请放心使用
 
@@ -238,8 +239,8 @@ ECOSteam 新CSGO皮肤交易平台
       "main_platform": "buff", // 填buff或eco,不可以填其它内容！
       "enabled_platforms": ["buff"], // 由于目前仅支持buff, 所以该配置项请保持不变
       "ratio":{ // 各平台上架价格的比例
-        "eco" : 1,
-        "buff" : 1.2
+        "eco" : 0.98,
+        "buff" : 1
       },
       "interval": 60 // 不建议设置太长，因为同步上架带来的问题是ECO发货后BUFF未及时下架，如果此时有人购买库存中没有的饰品，可能会导致BUFF封号
 
